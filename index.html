@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Head Games</title>
+</head>
+<body>
+
+    <script src="headArrays.js" ></script>
+
+
+    <nav class="navbar">
+        <div class="navbar__container">
+
+            <div class="spacer"></div>
+
+
+            <a href="/public/index.html" class="navbar__title">
+
+                <img id="head__games__logo" src="assets/logo.png" alt="head games logo">
+                </a>
+    
+                <button class="mobile__nav__toggle" expanded="false"></button>
+                
+                <ul class="navbar__menu" data-visible="false">
+                <li class="navbar__item"> <a href="passwordPage.html" class="navbar__links" >ADMIN</a> </li>
+    
+    
+            </ul>
+        </div>
+
+
+
+    </nav>
+
+    <div class="main__container">
+
+
+
+        <div class="face__container">
+
+            <img id="player__face" src="assets/faces/alex.png" alt="Alex's face">
+            <h2 id="player__name">Alex</h2>
+
+
+            
+            <div class="mob__heads__container" id="alex__column" >
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="face__container">
+
+            <img id="player__face" src="assets/faces/bobbie.png" alt="Bobbie's face">
+            <h2 id="player__name">Bobbie</h2>
+
+            
+            <div class="mob__heads__container" id="bob__column" >
+
+
+            </div>
+
+        </div>
+
+        <div class="face__container">
+
+            <img id="player__face" src="assets/faces/charlie.png" alt="Charlie's face">
+            <h2 id="player__name">Charlie</h2>
+
+            
+            <div class="mob__heads__container" id="charlie__column" >
+
+
+            </div>
+
+        </div>
+
+        <div class="face__container">
+
+            <img id="player__face" src="assets/faces/jack.png" alt="Jack's face">
+            <h2 id="player__name">Jack</h2>
+
+
+            <div class="mob__heads__container" id="jack__column" >
+
+
+            </div>
+
+
+        </div>
+
+
+        <script>
+
+            for (let i = 0; i < jackArray.length; i++) {
+
+                let head = jackArray[i];
+
+
+                var mob__head = document.createElement("div");
+                var mob__border = document.createElement("img");
+                var mob__face = document.createElement("img");
+
+
+                mob__border.src = "assets/box.png";
+                mob__border.id = "mob__border";
+
+                mob__face.src = "assets/mobs/" + head + ".webp";
+                mob__face.id = "mob__face";
+
+                mob__head.id = 'mob__head';
+
+                mob__head.appendChild(mob__face);
+                mob__head.appendChild(mob__border);
+
+                document.getElementById("jack__column").appendChild(mob__head);
+
+
+
+            }
+
+            for (let i = 0; i < alexArray.length; i++) {
+
+                let head = alexArray[i];
+
+                var mob__head = document.createElement("div");
+                var mob__border = document.createElement("img");
+                var mob__face = document.createElement("img");
+
+                mob__border.src = "assets/box.png";
+                mob__border.id = "mob__border";
+
+                mob__face.src = "assets/mobs/" + head + ".webp";
+                mob__face.id = "mob__face";
+
+                mob__head.id = 'mob__head';
+
+                mob__head.appendChild(mob__face);
+                mob__head.appendChild(mob__border);
+
+                document.getElementById("alex__column").appendChild(mob__head);
+
+            }
+
+            for (let i = 0; i < charlieArray.length; i++) {
+
+                let head = charlieArray[i];
+
+                var mob__head = document.createElement("div");
+                var mob__border = document.createElement("img");
+                var mob__face = document.createElement("img");
+
+                mob__border.src = "assets/box.png";
+                mob__border.id = "mob__border";
+
+                mob__face.src = "assets/mobs/" + head + ".webp";
+                mob__face.id = "mob__face";
+
+                mob__head.id = 'mob__head';
+
+                mob__head.appendChild(mob__face);
+                mob__head.appendChild(mob__border);
+
+                document.getElementById("charlie__column").appendChild(mob__head);
+
+            }
+
+                for (let i = 0; i < bobbieArray.length; i++) {
+
+                let head = bobbieArray[i];
+
+                var mob__head = document.createElement("div");
+                var mob__border = document.createElement("img");
+                var mob__face = document.createElement("img");
+
+                mob__border.src = "assets/box.png";
+                mob__border.id = "mob__border";
+
+                mob__face.src = "assets/mobs/" + head + ".webp";
+                mob__face.id = "mob__face";
+
+                mob__head.id = 'mob__head';
+
+                mob__head.appendChild(mob__face);
+                mob__head.appendChild(mob__border);
+
+                document.getElementById("bob__column").appendChild(mob__head);
+
+            }
+
+
+        </script>
+
+
+    </div>
+
+
+
+    <footer>
+
+        <div class="footer__container">
+
+            <div class="footer__columns">
+
+                <div class="footer__right">
+                    <img id="footer__logo" src="assets/logo.png">
+                </div>
+
+            </div>
+
+            <div class="footer__end">
+                <h6 id="footer__copyright__notice">© 2024 by Jack Shorter. All Rights Reserved.</h6>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

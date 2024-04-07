@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Head Games - Admin</title>
+</head>
+<body>
+    
+    <script type="module" src="app.js"></script>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+
+            <div class="spacer"></div>
+
+            <a href="../index.html" class="navbar__title">
+
+                <img id="head__games__logo" src="assets/logo.png" alt="head games logo">
+                </a>
+
+                <button class="mobile__nav__toggle" expanded="false"></button>
+
+                <ul class="navbar__menu" data-visible="false">
+                <li class="navbar__item"> <a href="passwordPage.html" class="navbar__links" >ADMIN</a> </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="admin__container">
+
+            <div class="face__container__small">
+
+                <img id="player__face__small" src="assets/faces/alex.png" alt="Alex's face">
+                <h2 id="player__name">Alex</h2>
+
+
+                
+                <div class="mob__heads__container__small" id="alex__column" >
+
+                </div>
+
+            </div>
+
+            <div class="face__container__small">
+
+                <img id="player__face__small" src="assets/faces/Bobbie.png" alt="Bobbies's face">
+                <h2 id="player__name">Bob</h2>
+
+
+                
+                <div class="mob__heads__container__small" id="bob__column" >
+
+                </div>
+
+            </div>
+
+            <div class="face__container__small">
+
+                <img id="player__face__small" src="assets/faces/charlie.png" alt="Charlie's face">
+                <h2 id="player__name">Char</h2>
+
+
+                
+                <div class="mob__heads__container__small" id="charlie__column" >
+
+                </div>
+
+            </div>
+
+            <div class="face__container__small">
+
+                <img id="player__face__small" src="assets/faces/jack.png" alt="Jack's face">
+                <h2 id="player__name">Jack</h2>
+
+
+                
+                <div class="mob__heads__container__small" id="jack__column">
+
+                </div>
+
+            </div>
+
+            <select class="name__dropdown" id="name__dropdown"> Names
+
+                <option value="Alex">Alex</option>
+                <option value="Bobbie">Bobbie</option>
+                <option value="Charlie">Charlie</option>
+                <option value="Jack">Jack</option>
+
+            </select>
+
+
+            <div class="vertical">
+
+
+                <input class="mob__search__box" id="mob__search__box" onkeyup="filterFunction()"></input>
+
+
+                <select class="mob__select__box" id="mob__select__box" multiple onclick="clickFunctionMob()">
+
+                    <option value ="AllayFace">Allay</option>
+                    <option value ="BatFace">Bat</option>
+                    <option value ="BeeFace">Bee</option>
+                    <option value ="CatFace">Cat</option>
+                    <option value ="ChickenFace">Chicken</option>
+                    <option value ="CodFace">Cod</option>
+                    <option value ="CowFace">Cow</option>
+                    <option value ="CreeperFace">Creeper</option>
+                    <option value ="CreeperFace">Charged Creeper</option>
+                    <option value ="DolphinFace">Dolphin</option>
+                    <option value ="DonkeyFace">Donkey</option>
+                    <option value ="DrownedFace">Drowned</option>
+                    <option value ="ElderGuardianFace">Elder Guardian</option>
+                    <option value ="EnderDragonFace">Ender Dragon</option>
+                    <option value ="EvokerFace">Evoker</option>
+                    <option value ="frogFace">Frog</option>
+                    <option value ="FoxFace">Fox</option>
+                    <option value ="GhastFace">Ghast</option>
+                    <option value ="GuardianFace">Guardian</option>
+                    <option value ="HoglinFace">Hoglin</option>
+                    <option value ="HorseFace">Horse</option>
+                    <option value ="HuskFace">Husk</option>
+                    <option value ="IronGolemFace">Iron Golem</option>
+                    <option value ="LlamaFace">Llama</option>
+                    <option value ="MagmaCubeFace">Magma Cube</option>
+                    <option value ="MooshroomFace">Mooshroom</option>
+                    <option value ="PandaFace">Panda</option>
+                    <option value ="ParrotFace">Parrot</option>
+                    <option value ="PhantomFace">Phantom</option>
+                    <option value ="PigFace">Pig</option>
+                    <option value ="PiglinFace">Piglin</option>
+                    <option value ="PiglinBruteFace">Piglin brute</option>
+                    <option value ="PillagerFace">Pillager</option>
+                    <option value ="PolarBearFace">Polar Bear</option>
+                    <option value ="PufferFishFace">Pufferfish</option>
+                    <option value ="RabbitFace">Rabbit</option>
+                    <option value ="RavagerFace">Ravager</option>
+                    <option value ="SalmonFace">Salmon</option>
+                    <option value ="SheepFace">Sheep</option>
+                    <option value ="SilverFishFace">Silverfish</option>
+                    <option value ="Skeleton">Skeleton</option>
+                    <option value ="SkeletonHorseFace">Skeleton Horse</option>
+                    <option value ="SlimeFace">Slime</option>
+                    <option value ="SnowFoxFace">Snow Fox</option>
+                    <option value ="SnowGolemFace">Snow Golem</option>
+                    <option value ="SquidFace">Squid</option>
+                    <option value ="StrayFace">Stray</option>
+                    <option value ="SpiderFace">Spider</option>
+                    <option value ="StriderFace">Strider</option>
+                    <option value ="TurtleFace">Turtle</option>
+                    <option value ="TropicalFishFace">Tropical Fish</option>
+                    <option value ="VexFace">Vex</option>
+                    <option value ="VillagerFace">Villager</option>
+                    <option value ="WitchFace">Face</option>
+                    <option value ="WitherSkeletonFace">Wither Skeleton Skull</option>
+                    <option value ="WitherFace">Wither Skull</option>
+                    <option value ="WolfFace">Wolf</option>
+                    <option value ="ZoglinFace">Zoglin</option>
+                    <option value ="ZombieVillagerFace">Zombie Villager</option>
+                    <option value ="ZombifiedPiglinFace">Zombified Piglin</option>
+                    <option value ="ZombieFace">Zombie</option>
+
+                    <option value ="WardenFace">Warden</option>
+                    <option value ="JebSheepFace">Jeb Sheep</option>
+
+                    <option value ="TadPoleFace">TadPole</option>
+                    <option value ="AxolotlFace">Axolotl</option>
+                    <option value ="GoatFace">Goat</option>
+                    <option value ="ShulkerFace">Shulker</option>
+                    <option value ="CamelFace">Camel</option>
+
+                    <option value ="EndermiteFace">Endermite</option>
+
+
+
+
+
+
+
+
+                </select>
+
+            </div>
+
+            <button class="add__button" onclick="addMob()">Add</button>
+
+            <script>
+
+
+                function filterFunction() {
+                    const input = document.getElementById("mob__search__box");
+                    const filter = input.value.toUpperCase();
+                    const div = document.getElementById("mob__select__box");
+                    const a = div.getElementsByTagName("option");
+                    for (let i = 0; i < a.length; i++) {
+                        txtValue = a[i].textContent || a[i].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                        } else {
+                        a[i].style.display = "none";
+                        }
+                    }
+                }
+
+
+                function clickFunctionMob() {
+
+                    var e = document.getElementById("mob__select__box");
+
+                    var value = e.value;
+                    var text = e.options[e.selectedIndex].text;
+
+
+                    document.getElementById("mob__search__box").value = text
+
+                }
+
+
+                function addMob() {
+                    const name = document.getElementById("name__dropdown").value;
+                    const head = document.getElementById("mob__select__box").value;
+
+                    var mob__head = document.createElement("div");
+                    var mob__border = document.createElement("img");
+                    var mob__face = document.createElement("img");
+
+
+                    mob__border.src = "assets/box.png";
+                    mob__border.id = "mob__border";
+
+                    mob__face.src = "assets/mobs/" + head + ".webp";
+                    mob__face.id = "mob__face";
+
+
+                    mob__head.id = 'mob__head';
+
+                    mob__head.appendChild(mob__face);
+                    mob__head.appendChild(mob__border);
+
+                    if (name==="Jack") {
+
+                        document.getElementById("jack__column").appendChild(mob__head);
+
+                        // jackArray[jackArray.length] = head;
+                        
+                        // console.log(jackArray);
+
+                        return;
+
+
+                    }
+
+                    else if (name==="Alex") {
+
+                        document.getElementById("alex__column").appendChild(mob__head);
+                        
+                        // alexArray[alexArray.length] = head;
+                        
+                        // console.log(alexArray);
+
+                        
+                        return;
+
+                    }
+
+                    else if (name==="Bobbie") {
+
+                        document.getElementById("bob__column").appendChild(mob__head);
+
+                        // bobbieArray[bobbieArray.length] = head;
+                        
+                        // console.log(bobbieArray);
+                        
+                        return;
+                    }
+
+                    else if (name==="Charlie") {
+
+                        document.getElementById("charlie__column").appendChild(mob__head);
+
+                        // charlieArray[charlieArray.length] = head;
+                        
+                        // console.log(charlieArray);
+                        
+                        return;
+                    }
+                }
+
+
+
+            </script>
+
+        
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer__container">
+
+            <div class="footer__columns">
+
+                <div class="footer__right">
+                    <img id="footer__logo" src="assets/logo.png">
+                </div>
+
+            </div>
+
+            <div class="footer__end">
+                <h6 id="footer__copyright__notice">© 2024 by Jack Shorter. All Rights Reserved.</h6>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>
