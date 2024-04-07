@@ -1,4 +1,4 @@
-const alexArray = ["TurtleFace"];
+const alexArray = [];
 const bobbieArray = [];
 const charlieArray = [];
 const jackArray = [];
