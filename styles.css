@@ -41,6 +41,16 @@ body {
 
 }
 
+@media only screen and (max-width: 700px) { 
+
+    #head__games__logo {
+        height: 13rem;
+        margin-top: -1rem;
+
+    }
+
+}
+
 .navbar {
     background: var(--cyan);
     height: 10rem;
@@ -121,7 +131,7 @@ body {
     display: flex;
 
     gap: 5rem;
-    margin: 5rem;
+    margin: 5rem, auto;
 
 }
 
@@ -207,15 +217,38 @@ body {
 
 }
 
-/* @media only screen and (max-width: 2375px) { 
+@media only screen and (max-width: 700px) { 
 
-    .mob__heads__container {
-        grid-template-columns: 30% 30% 30%; 
+    .face__container {
+        padding: 0;
+        width: 350px;
     }
 
-} */
+    .mob__heads__container {
+        grid-template-columns: 33% 33% 33%; 
+    }
+
+    #player__face {
+        width: 5rem;
+    }
+    
+    #player__name {
+        font-size: 2rem;
+    }
+
+    #mob__head {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        aspect-ratio: 1 / 1 ;
+    
+    }
 
 
+
+}
 
 
 
