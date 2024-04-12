@@ -35,21 +35,12 @@ body {
 }
 
 #head__games__logo {
-    height: 15rem;
+    height: 8rem;
 
-    margin-top: -2rem;
-
-}
-
-@media only screen and (max-width: 700px) { 
-
-    #head__games__logo {
-        height: 13rem;
-        margin-top: -1rem;
-
-    }
+    margin-top: 1rem;
 
 }
+
 
 .navbar {
     background: var(--cyan);
@@ -93,11 +84,41 @@ body {
     max-height: 10rem;
 }
 
+@media only screen and (max-width: 1000px) { 
 
-.spacer {
-    /* width: 12rem; */
-    width: 0rem;
+    #head__games__logo {
+        height: 4.5rem;
+        margin-top: 3rem;
+
+    }
+
+    .navbar {
+        height: 8rem;
+        max-height: 8rem;
+
+    }
+
 }
+
+
+@media only screen and (max-width: 700px) { 
+
+    #head__games__logo {
+        height: 3rem;
+        margin-top: 3.5rem;
+
+    }
+
+    .navbar {
+        height: 5rem;
+        max-height: 5rem;
+
+    }
+
+}
+
+
+
 
 .navbar__links{
     font-family: "Josefin Sans";
@@ -130,8 +151,8 @@ body {
     min-height: 70vh;
     display: flex;
 
-    gap: 5rem;
-    margin: 5rem, auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 
 }
 
@@ -153,11 +174,16 @@ body {
 
 }
 
-@media only screen and (max-width: 1200px) { 
+@media only screen and (max-width: 800px) { 
 
     .main__container {
         display: grid;
         grid-template-columns: 100%;
+
+        gap: 2rem;
+
+
+
     }
 
 }
@@ -174,7 +200,7 @@ body {
     background-color: #9d9274;
     border: #e5d4a6;
     border-style:double;
-    border-width: 10px;
+    border-width: 12px;
 
     display: flex;
     flex-direction: column;
@@ -197,9 +223,6 @@ body {
     color: var(--text-color-default);
     font-size: 3rem;
 }
-
-
-
 
 
 .mob__heads__container {
@@ -502,12 +525,19 @@ footer {
 }
 
 #footer__logo{
-    width: 25rem;
+    margin-top: 3rem;
+    width: 30rem;
 }
+
+
+
+
 
 #footer__copyright__notice {
     font-family: "Josefin Sans";
     color: var(--text-color-default);
+    padding-top: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer__left{
@@ -535,8 +565,16 @@ footer {
     text-align: center;
 }
 
-#footer__copyright__notice {
-    font-size: 1.5rem;
+@media only screen and (max-width: 700px) { 
 
-    margin-top: -3.5rem;
+    #footer__logo {
+        width: 20rem;
+
+
+    }
+
+    #footer__copyright__notice {
+        font-size: medium;
+    }
+
 }

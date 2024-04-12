@@ -14,20 +14,12 @@
     <nav class="navbar">
         <div class="navbar__container">
 
-            <div class="spacer"></div>
-
 
             <a href="" class="navbar__title">
 
                 <img id="head__games__logo" src="assets/logo.png" alt="head games logo">
                 </a>
-    
-                <button class="mobile__nav__toggle" expanded="false"></button>
                 
-                <ul class="navbar__menu" data-visible="false">
-                <li class="navbar__item"> <a href="passwordPage.html" class="navbar__links" >ADMIN</a> </li>
-    
-    
             </ul>
         </div>
 
@@ -99,6 +91,7 @@
         <script>
 
             for (let i = 0; i < jackArray.length; i++) {
+                jackArray.sort();
 
                 let head = jackArray[i];
 
@@ -126,6 +119,7 @@
             }
 
             for (let i = 0; i < alexArray.length; i++) {
+                alexArray.sort();
 
                 let head = alexArray[i];
 
@@ -150,6 +144,8 @@
 
             for (let i = 0; i < charlieArray.length; i++) {
 
+                charlieArray.sort();
+
                 let head = charlieArray[i];
 
                 var mob__head = document.createElement("div");
@@ -171,7 +167,10 @@
 
             }
 
+
                 for (let i = 0; i < bobbieArray.length; i++) {
+
+                bobbieArray.sort();
 
                 let head = bobbieArray[i];
 
