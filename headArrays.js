@@ -1,4 +1,4 @@
-const alexArray = ["RabbitFace","WolfFace","ElderGuardianFace","SnowGolemFace","EnderdragonFace","SalmonBody","PigFace","ParrotFace","SquidFace","TropicalFishBody","VillagerFace","OcelotFace","CatFace","HorseFace","SheepFace",];
+const alexArray = ["RabbitFace","WolfFace","ElderGuardianFace","SnowGolemFace","EnderdragonFace","SalmonBody","PigFace","ParrotFace","SquidFace","TropicalFishBody","VillagerFace","OcelotFace","CatFace","HorseFace","SheepFace","ZombieVillagerFace","DonkeyFace","ShulkerFace","CodFace","WanderingTraderFace","EvokerFace","VindicatorFace","BeeFace","ChickenFace","PhantomFace"];
 const bobbieArray = [];
 const charlieArray = [];
 const jackArray = [];
