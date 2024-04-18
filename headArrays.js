@@ -21,4 +21,4 @@ const charlieArray = ["SheepFace","RabbitFace","CatFace","ParrotFace","OcelotFac
 "PandaFace","EnderdragonFace","DonkeyFace","BeeFace","WolfFace","SquidFace","WanderingTraderFace","PufferfishFace",
 "HorseFace","ChickenFace","PillagerFace","VindicatorFace","LlamaFace","CamelFace","GhastFace","FrogFace"];
 
-const jackArray = ["SquidFace"];
+const jackArray = ["SquidFace","VillagerFace","SkeletonFace","PlayerFace","TropicalFishHead","ZombieVillagerHead","GlowSquidFace"];
