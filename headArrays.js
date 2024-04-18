@@ -14,7 +14,7 @@ const bobbieArray = ["BeeFace","BatFace","HorseFace","BlazeFace","ParrotFace","S
 "PufferfishFace","MooshroomFace","SalmonFace","RabbitFace","SilverfishFace","FoxFace","SpiderFace","SquidFace",
 "TadpoleFace","TropicalFishFace","TurtleFace","VexFace","VillagerFace","WanderingTraderFace","FrogFace","CatFace",
 "AxolotlFace","WolfFace","EnderdragonFace","CowFace","LlamaFace","ZombieVillagerFace","EndermiteFace","StrayFace",
-"VindicatorFace","ElderGuardianFace","JebSheepFace","PlayerFace","MiniBlock","DragonFace"];
+"VindicatorFace","ElderGuardianFace","JebSheepFace","PlayerFace","MiniBlock"];
 
 const charlieArray = ["SheepFace","RabbitFace","CatFace","ParrotFace","OcelotFace","EvokerFace","WitchFace",
 "IronGolemFace","AxolotlFace","PiglinBruteFace","VillagerFace","WitherFace","SilverfishFace","ZombieVillagerFace",
