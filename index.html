@@ -35,9 +35,9 @@
 
             <img id="player__face" src="assets/faces/alex.png" alt="Alex's face">
             <h2 id="player__name">Alex</h2>
+            <h3 id="alex__head__count">heads</h3>
 
 
-            
             <div class="mob__heads__container" id="alex__column" >
 
             </div>
@@ -51,8 +51,8 @@
 
             <img id="player__face" src="assets/faces/bobbie.png" alt="Bobbie's face">
             <h2 id="player__name">Bobbie</h2>
+            <h3 id="bobbie__head__count"></h3>
 
-            
             <div class="mob__heads__container" id="bob__column" >
 
 
@@ -64,6 +64,7 @@
 
             <img id="player__face" src="assets/faces/charlie.png" alt="Charlie's face">
             <h2 id="player__name">Charlie</h2>
+            <h3 id="charlie__head__count"></h3>
 
             
             <div class="mob__heads__container" id="charlie__column" >
@@ -77,6 +78,7 @@
 
             <img id="player__face" src="assets/faces/jack.png" alt="Jack's face">
             <h2 id="player__name">Jack</h2>
+            <h3 id="jack__head__count"></h3>
 
 
             <div class="mob__heads__container" id="jack__column" >
@@ -115,7 +117,6 @@
                 document.getElementById("jack__column").appendChild(mob__head);
 
 
-
             }
 
             for (let i = 0; i < alexArray.length; i++) {
@@ -139,6 +140,9 @@
                 mob__head.appendChild(mob__border);
 
                 document.getElementById("alex__column").appendChild(mob__head);
+
+
+
 
             }
 
@@ -192,6 +196,11 @@
                 document.getElementById("bob__column").appendChild(mob__head);
 
             }
+
+            document.getElementById("alex__head__count").innerHTML = alexArray.length + " Heads";
+            document.getElementById("charlie__head__count").innerHTML = charlieArray.length + " Heads";
+            document.getElementById("bobbie__head__count").innerHTML = bobbieArray.length + " Heads";
+            document.getElementById("jack__head__count").innerHTML = jackArray.length + " Heads";
 
 
         </script>

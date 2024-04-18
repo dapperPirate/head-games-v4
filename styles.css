@@ -224,6 +224,16 @@ body {
     font-size: 3rem;
 }
 
+h3 {
+
+    font-family: "Josefin Sans";
+    margin: 1rem auto;
+    color: var(--text-color-default);
+    font-size: 2rem;
+
+
+}
+
 
 .mob__heads__container {
 
@@ -266,6 +276,11 @@ body {
         align-items: center;
     
         aspect-ratio: 1 / 1 ;
+    
+    }
+
+    h3 {
+        font-size: 1.4rem;
     
     }
 
